@@ -7,10 +7,11 @@ st.title("☕ مجلس الذكاء الاصطناعي (AI Council)")
 # الشريط الجانبي لمفتاح API
 api_key = st.sidebar.text_input("أدخل مفتاح OpenRouter API:", type="password")
 
+# قائمة النماذج المجانية والمستقرة
 models = {
-    "Gemini": "google/gemini-2.0-flash-lite-001:free",
-    "Llama": "meta-llama/llama-3.3-70b-instruct:free",
-    "DeepSeek": "deepseek/deepseek-r1:free"
+    "الموجه المجاني الذكي (OpenRouter Free)": "openrouter/free",
+    "DeepSeek R1 المجاني": "deepseek/deepseek-r1:free",
+    "Llama المجاني": "meta-llama/llama-3.3-70b-instruct:free"
 }
 
 prompt = st.text_area("أدخل السؤال أو الموضوع للنقاش:")
@@ -40,3 +41,4 @@ if st.button("🚀 إطلاق النقاش"):
                     st.success(response.choices[0].message.content)
                 except Exception as e:
                     st.error(f"خطأ أثناء الاتصال بـ {name}: {e}")
+٠
