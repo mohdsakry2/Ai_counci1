@@ -8,9 +8,8 @@ st.title("☕ مجلس الذكاء الاصطناعي (AI Council)")
 api_key = st.sidebar.text_input("أدخل مفتاح OpenRouter API:", type="password")
 
 models = {
-    "ChatGPT": "openai/gpt-4o-mini:free",
     "Gemini": "google/gemini-2.0-flash-lite-001:free",
-    "Claude": "meta-llama/llama-3.3-70b-instruct:free",
+    "Llama": "meta-llama/llama-3.3-70b-instruct:free",
     "DeepSeek": "deepseek/deepseek-r1:free"
 }
 
