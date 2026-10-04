@@ -9,9 +9,8 @@ api_key = st.sidebar.text_input("أدخل مفتاح OpenRouter API:", type="pas
 
 # قائمة النماذج المجانية والمستقرة
 models = {
-    "الموجه المجاني الذكي (OpenRouter Free)": "openrouter/free",
-    "DeepSeek R1 المجاني": "deepseek/deepseek-r1:free",
-    "Llama المجاني": "meta-llama/llama-3.3-70b-instruct:free"
+    "الموجه المجاني الذكي": "openrouter/free",
+    "DeepSeek R1": "deepseek/deepseek-r1:free"
 }
 
 prompt = st.text_area("أدخل السؤال أو الموضوع للنقاش:")
@@ -41,4 +40,3 @@ if st.button("🚀 إطلاق النقاش"):
                     st.success(response.choices[0].message.content)
                 except Exception as e:
                     st.error(f"خطأ أثناء الاتصال بـ {name}: {e}")
-٠
