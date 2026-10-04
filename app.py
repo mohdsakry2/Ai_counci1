@@ -7,10 +7,12 @@ st.title("☕ مجلس الذكاء الاصطناعي (AI Council)")
 # الشريط الجانبي لمفتاح API
 api_key = st.sidebar.text_input("أدخل مفتاح OpenRouter API:", type="password")
 
-# قائمة النماذج المجانية والمستقرة
+# قائمة بـ 4 نماذج مجانية مضمونة ومجربة
 models = {
-    "الموجه المجاني الذكي": "openrouter/free",
-    "DeepSeek R1": "deepseek/deepseek-r1:free"
+    "الموجه الذكي العام": "openrouter/free",
+    "الموجه الذكي التلقائي": "openrouter/auto",
+    "Qwen Coder المجاني": "qwen/qwen-2.5-coder-32b-instruct:free",
+    "Mistral المجاني": "mistralai/mistral-7b-instruct:free"
 }
 
 prompt = st.text_area("أدخل السؤال أو الموضوع للنقاش:")
